@@ -8,7 +8,9 @@ simple controller serves index.html when user hits root
 when running localy use -Dspring.profiles.active=local
 
 to package and eploy to AWS use
+
 mvn clean package spring-boot:repackage -Dmaven.test.skip=true
+
 eb deploy (deploy artifact specified in /.elasticbeanstalk/config.yml)
 
 
